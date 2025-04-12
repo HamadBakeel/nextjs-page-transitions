@@ -7,6 +7,9 @@
         left: 0;
         top: 0;
     }
+    .curve-svg{
+        z-index: 100;
+    }
     .background{
         background-color: black;
         transition: opacity 0s linear 0.1s;
@@ -17,7 +20,7 @@
         top: 40%;
         color: white;
         font-size: 46px;
-        z-index: 3;
+        z-index: 101;
         transform: translateX(-50%);
         text-align: center;
     }

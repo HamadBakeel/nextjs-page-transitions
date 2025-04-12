@@ -37,6 +37,7 @@ export const translate = {
     },
     enter: {
         top: "-100vh",
+        
         transition: {duration: .75, delay: .35, ease: [0.76, 0, 0.24, 1]},
         transitionEnd : {
             top: "100vh"

@@ -1,14 +1,18 @@
 export const menuItems = [
     {
-        text: "Features",
-        url: "#features"
+        text: "Home",
+        url: "/"
     },
     {
-        text: "Pricing",
-        url: "#pricing"
+        text: "About",
+        url: "/about"
     },
     {
-        text: "Testimonials",
-        url: "#testimonials"
-    }
+        text: "Contact",
+        url: "/contact"
+    },
+    {
+        text: "Landing",
+        url: "/landing"
+    },
 ];

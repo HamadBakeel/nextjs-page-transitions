@@ -4,15 +4,16 @@
 
 
 :root {
-    --background: #ffffff;
-    --foreground: #000000;
-    --primary: #0f172a;
-    --secondary: #64748b;
-    --primary-accent: #3b82f6;
-    --foreground-accent: #1e293b;
-    --hero-background: #f8fafc;
-  }
-  
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #FED835;
+  --secondary: #304fff;
+
+  --primary-accent: #e5c230;
+  --foreground-accent: #454545;
+  --hero-background: #F3F3F5;
+}
+
 body{
     margin: 0px;
     /* background-color: black; */

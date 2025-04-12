@@ -8,7 +8,7 @@ const routes = {
     "/": "Home",
     "/about": "About",
     "/contact": "Contact",
-    "/layout": "Layout"
+    "/landing": "Landing"
 }
 
 const anim = (variants) => {
