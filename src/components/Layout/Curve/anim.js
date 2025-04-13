@@ -42,6 +42,8 @@ export const translate = {
         transitionEnd : {
             top: "100vh"
         }
+        // The 'transitionEnd' property specifies the final state of the 'top' property after the transition has completed, setting it to "100vh".
+
     },
     exit: {
         top: "-300px",

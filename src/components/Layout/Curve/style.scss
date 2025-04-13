@@ -8,10 +8,11 @@
         top: 0;
     }
     .curve-svg{
-        z-index: 100;
+        z-index: 1000;
+        will-change: transform;
     }
     .background{
-        background-color: black;
+        background-color: --primary-color;
         transition: opacity 0s linear 0.1s;
     }
     .route{
@@ -20,7 +21,7 @@
         top: 40%;
         color: white;
         font-size: 46px;
-        z-index: 101;
+        z-index: 1001;
         transform: translateX(-50%);
         text-align: center;
     }
