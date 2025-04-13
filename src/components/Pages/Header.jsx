@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import { FaFingerprint } from 'react-icons/fa';
+import { useRouter } from 'next/router';
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
@@ -12,6 +13,7 @@ import { menuItems } from '@/data/menuItems';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -33,7 +35,14 @@ const Header = () => {
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
+                                <Link 
+                                    href={item.url} 
+                                    className={`transition-colors ${
+                                        router.pathname === item.url
+                                            ? "text-primary font-semibold"
+                                            : "text-foreground hover:text-foreground-accent"
+                                    }`}
+                                >
                                     {item.text}
                                 </Link>
                             </li>
@@ -79,7 +88,15 @@ const Header = () => {
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
+                                <Link 
+                                    href={item.url} 
+                                    className={`block transition-colors ${
+                                        router.pathname === item.url
+                                            ? "text-primary font-semibold"
+                                            : "text-foreground hover:text-primary"
+                                    }`}
+                                    onClick={toggleMenu}
+                                >
                                     {item.text}
                                 </Link>
                             </li>
