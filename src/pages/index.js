@@ -26,11 +26,13 @@ export default function Home() {
         <meta name="twitter:description" content="Experience smooth page transitions in Next.js with three unique animation styles." />
         <meta name="twitter:image" content="/twitter-image.jpg" />
         <link rel="canonical" href="https://nextjs-page-transitions-pearl.vercel.app" />
+        <link rel="icon" href="/favicon/favicon.ico" />
 
         {/* Favicon */}
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+        <link rel="icon" href="/favicon/favicon.ico" />
 
         {/* Apple Touch Icons */}
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />

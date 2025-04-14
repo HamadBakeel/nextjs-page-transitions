@@ -22,10 +22,12 @@ export default function Contact() {
         <meta name="twitter:description" content="Get answers to your questions about page transitions in Next.js." />
         <meta name="twitter:image" content="/twitter-image.jpg" />
         <link rel="canonical" href="https://nextjs-page-transitions-pearl.vercel.app/faq" />
+      
         {/* Favicon */}
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+        <link rel="icon" href="/favicon/favicon.ico" />
 
         {/* Apple Touch Icons */}
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
