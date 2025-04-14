@@ -58,7 +58,7 @@ export default function PageTransitionModal({setSelectedTransition}) {
                   className={`flex-1 rounded-md py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white ${
                     currentTransition === 'inner' 
                       ? 'bg-gray-700' 
-                      : 'bg-transparent border-2 border-gray-700 text-gray-700 hover:bg-gray-100'
+                      : 'bg-transparent border-2 border-gray-700 !text-gray-700 hover:bg-gray-100'
                   }`}
                   onClick={()=>changeSelectedTransition('inner')}
                 >
@@ -68,7 +68,7 @@ export default function PageTransitionModal({setSelectedTransition}) {
                   className={`flex-1 rounded-md py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white ${
                     currentTransition === 'curve' 
                       ? 'bg-gray-700' 
-                      : 'bg-transparent border-2 border-gray-700 text-gray-700 hover:bg-gray-100'
+                      : 'bg-transparent border-2 border-gray-700 !text-gray-700 hover:bg-gray-100'
                   }`}
                   onClick={()=>changeSelectedTransition('curve')}
                 >
@@ -78,7 +78,7 @@ export default function PageTransitionModal({setSelectedTransition}) {
                   className={`flex-1 rounded-md py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white ${
                     currentTransition === 'stairs' 
                       ? 'bg-gray-700' 
-                      : 'bg-transparent border-2 border-gray-700 text-gray-700 hover:bg-gray-100'
+                      : 'bg-transparent border-2 border-gray-700 !text-gray-700 hover:bg-gray-100'
                   }`}
                   onClick={()=>changeSelectedTransition('stairs')}
                 >
