@@ -123,12 +123,3 @@ Edit the corresponding transition component in `src/components/Layout/` to adjus
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Inspired by modern web design trends
-- Built with the amazing Next.js framework
-- Uses Framer Motion for smooth animations
