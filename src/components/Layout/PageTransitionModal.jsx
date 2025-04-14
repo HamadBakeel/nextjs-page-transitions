@@ -1,11 +1,20 @@
 import { Button, Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
 import toast from 'react-hot-toast';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function PageTransitionModal({setSelectedTransition}) {
   let [isOpen, setIsOpen] = useState(false)
+  const [currentTransition, setCurrentTransition] = useState('curve');
+
+  useEffect(() => {
+    const storedTransition = localStorage.getItem('selectedTransition');
+    if (storedTransition) {
+      setCurrentTransition(storedTransition);
+    }
+  }, []);
 
   function changeSelectedTransition(transitionName){
+    setCurrentTransition(transitionName);
     setSelectedTransition(transitionName);
     toast.success(`Page transition is set to ${transitionName} now!`, {
       duration: 4000,
@@ -46,19 +55,31 @@ export default function PageTransitionModal({setSelectedTransition}) {
               </DialogTitle>
               <div className="mt-4 flex gap-4">
                 <Button
-                  className="flex-1 rounded-md bg-gray-700 py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                  className={`flex-1 rounded-md py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white ${
+                    currentTransition === 'inner' 
+                      ? 'bg-gray-700' 
+                      : 'bg-transparent border-2 border-gray-700 text-gray-700 hover:bg-gray-100'
+                  }`}
                   onClick={()=>changeSelectedTransition('inner')}
                 >
                   Inner
                 </Button>
                 <Button
-                  className="flex-1 rounded-md bg-gray-700 py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                  className={`flex-1 rounded-md py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white ${
+                    currentTransition === 'curve' 
+                      ? 'bg-gray-700' 
+                      : 'bg-transparent border-2 border-gray-700 text-gray-700 hover:bg-gray-100'
+                  }`}
                   onClick={()=>changeSelectedTransition('curve')}
                 >
                   Curve
                 </Button>
                 <Button
-                  className="flex-1 rounded-md bg-gray-700 py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                  className={`flex-1 rounded-md py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white ${
+                    currentTransition === 'stairs' 
+                      ? 'bg-gray-700' 
+                      : 'bg-transparent border-2 border-gray-700 text-gray-700 hover:bg-gray-100'
+                  }`}
                   onClick={()=>changeSelectedTransition('stairs')}
                 >
                   Stairs
