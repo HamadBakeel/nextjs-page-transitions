@@ -19,11 +19,6 @@ export default function Layout({children}) {
             <motion.div className='slide' {...anim(slide)}/>
             <motion.div className='page' {...anim(perspective)}>
                 <motion.div {...anim(opacity)}>
-                    <div className='header'>
-                        <Link href="/">Home</Link>
-                        <Link href="/about">About</Link>
-                        <Link href="/contact">Contact</Link>
-                    </div>
                     {
                         children
                     }

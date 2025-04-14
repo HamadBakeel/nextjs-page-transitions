@@ -1,4 +1,5 @@
 import Curve from '@/components/Layout/Curve'
+import PageTransition from '@/components/Layout/PageTransition'
 import Container from '@/components/Pages/Container'
 import FAQ from '@/components/Pages/FAQ'
 import Section from '@/components/Pages/Section'
@@ -13,13 +14,13 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Curve>
+      <PageTransition>
         <Container>
           <Section>
             <FAQ />
           </Section>
         </Container>
-      </Curve>
+      </PageTransition>
     </>
   )
 }

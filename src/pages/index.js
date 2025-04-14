@@ -7,6 +7,7 @@ import Container from "@/components/Pages/Container";
 import Section from "@/components/Pages/Section";
 import Stats from "@/components/Pages/Stats";
 import CTA from "@/components/Pages/CTA";
+import PageTransition from '@/components/Layout/PageTransition';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Curve>
+      <PageTransition>
         <Hero />
         <Logos />
         <Container>
@@ -28,7 +29,7 @@ export default function Home() {
             <CTA />
           </Section>
         </Container>
-      </Curve>
+      </PageTransition>
     </>
   )
 }
