@@ -1,9 +1,9 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'FinancePro',
+    siteUrl: 'https://financepro-omega.vercel.app/',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'FinancePro - Next.js and Tailwind CSS Landing Page Template',
+        description: 'FinancePro empowers individuals with innovative financial solutions to achieve their goals and enhance their financial well-being.',
     },
     language: 'en-us',
     locale: 'en-US',

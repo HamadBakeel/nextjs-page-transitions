@@ -7,7 +7,7 @@ export const faqs = [
     },
     {
         question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
+        answer: `Absolutely! Your ${siteDetails.siteName} account syncs seamlessly across all your devices - smartphone, tablet, and computer.`,
     },
     {
         question: 'Can I connect all my bank accounts?',
@@ -19,7 +19,7 @@ export const faqs = [
     },
     {
         question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
+        answer: `Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of ${siteDetails.siteName}.`
     },
     {
         question: 'How do I reset my password?',

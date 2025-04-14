@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div>
                     <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
+                        <img src={siteDetails.siteLogo} alt={siteDetails.siteName} className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
                         <h3 className="manrope text-xl font-semibold cursor-pointer">
                             {siteDetails.siteName}
                         </h3>

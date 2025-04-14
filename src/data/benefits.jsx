@@ -1,4 +1,5 @@
 import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import { siteDetails } from "./siteDetails";
 
 export const benefits = [
     {
@@ -25,7 +26,7 @@ export const benefits = [
     },
     {
         title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Finwise makes investing accessible and straightforward.",
+        description: `Start building wealth today, no financial degree required. ${siteDetails.siteName} makes investing accessible and straightforward.`,
         bullets: [
             {
                 title: "Micro-Investing",
@@ -47,7 +48,7 @@ export const benefits = [
     },
     {
         title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
+        description: `Your financial data deserves the best protection. Rest easy knowing ${siteDetails.siteName} employs cutting-edge security measures.`,
         bullets: [
             {
                 title: "Military-Grade Encryption",
