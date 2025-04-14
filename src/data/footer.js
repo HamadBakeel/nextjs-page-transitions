@@ -15,7 +15,7 @@ export const footerDetails = {
         }
     ],
     email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    telephone: '+9665********',
     socials: {
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',
