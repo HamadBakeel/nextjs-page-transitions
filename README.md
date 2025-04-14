@@ -123,3 +123,11 @@ Edit the corresponding transition component in `src/components/Layout/` to adjus
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## 🙏 Credits & Resources
+
+This project was built as a personal learning exercise to explore page transitions in Next.js. Big thanks to the creators who made it easier:
+
+- 🎥 [Olivier Larose](https://www.youtube.com/@olivierlarose) – for the [amazing tutorial on Next.js page transitions](https://www.youtube.com/watch?v=WmvpJ4KX30s) that guided the transition implementation.
+- 🧩 [Finwise Landing Page Template](https://dev.to/nexilaunch/open-source-nextjs-landing-page-template-finwise-and-how-to-use-it-33b4) – used for UI structure and design to focus on animation logic.
+
+I customized, restructured, and extended the codebase to suit the project's goals and to deepen my understanding of Framer Motion and transition handling in Next.js.
